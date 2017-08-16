@@ -1,4 +1,4 @@
-package main;
+package server;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+import main.Account;
+import main.Main;
 import packet.CPacketPlayerQuit;
 import packet.CPacketServerClosed;
 import packet.Packet;

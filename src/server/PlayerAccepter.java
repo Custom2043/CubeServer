@@ -1,10 +1,12 @@
-package main;
+package server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 
+import main.Account;
+import main.Main;
 import packet.CPacketJoinServer;
 import packet.CPacketServerClosed;
 import packet.DPacketPlayerConnect;

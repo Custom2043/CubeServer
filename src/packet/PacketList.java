@@ -25,5 +25,7 @@ public class PacketList
 		packet.add(CPacketPlayerQuit.class, 6);
 		packet.add(CPacketMovement.class, 7);
 		packet.add(SPacketMovement.class, 8);
+		packet.add(CPacketRotation.class, 9);
+		packet.add(SPacketRotation.class, 10);
 	}
 }

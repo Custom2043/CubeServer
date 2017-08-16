@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import client.ClientMain;
 import main.Account;
-import main.ClientMain;
 import main.Cube;
 import util.CustomInputStream;
 import util.CustomOutputStream;
@@ -36,7 +36,7 @@ public class CPacketJoinServer extends Packet implements Packet.PacketToClient
 		{
 			cos.writeString(a.name);
 			cos.writeDouble(a.x);
-			cos.writeDouble(a.y);
+			cos.writeDouble(a.z);
 		}
 	}
 

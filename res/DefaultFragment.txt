@@ -1,0 +1,14 @@
+#version 150 core
+
+in vec2 pass_textureCoordinates;
+in vec4 pass_color;
+
+uniform sampler2D modelTexture;
+
+void main(void)
+{
+	if (pass_textureCoordinates.x == -1)
+		gl_FragColor = pass_color / 255f;
+	else
+		gl_FragColor = pass_color / 255f * texture(modelTexture,pass_textureCoordinates);
+}

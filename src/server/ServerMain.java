@@ -1,6 +1,8 @@
-package main;
+package server;
 
 import java.io.IOException;
+
+import main.Main;
 
 import org.lwjgl.LWJGLException;
 

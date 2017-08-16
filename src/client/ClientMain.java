@@ -1,5 +1,6 @@
-package main;
+package client;
 
+import gui.Drawer;
 import gui.Gui;
 import gui.GuiIngame;
 import gui.GuiMainMenu;
@@ -7,6 +8,10 @@ import gui.GuiMainMenu;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
+
+import main.Account;
+import main.Game;
+import main.Main;
 
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Keyboard;
@@ -17,9 +22,11 @@ import packet.DPacketPing;
 import packet.DPacketPlayerConnect;
 import packet.Packet;
 import packet.SPacketQuitGame;
+import server.CubeServer;
 import util.CustomTimer;
 import util.TimeSection;
 import drawer.CustomDrawer;
+import drawer.ShaderProgram;
 
 public class ClientMain extends Main
 {
@@ -48,6 +55,8 @@ public class ClientMain extends Main
 		if (ingame())
 			quitServer(true);
 		screen.quit();
+		ShaderProgram.quit();
+		Drawer.text.quit();
 	}
 	public static void startNewGame()
 	{

@@ -2,7 +2,7 @@ package packet;
 
 import java.io.IOException;
 
-import main.ClientMain;
+import client.ClientMain;
 import main.Cube;
 import packet.Packet.PacketToClient;
 import util.CustomInputStream;
@@ -18,7 +18,7 @@ public class CPacketMovement extends Packet implements PacketToClient
 	{
 		cubeName = c.name;
 		xStart = c.x;
-		yStart = c.y;
+		yStart = c.z;
 		direction = c.direction;
 	}
 	@Override
@@ -43,7 +43,7 @@ public class CPacketMovement extends Packet implements PacketToClient
 	{
 		Cube c = ClientMain.game.getCube(cubeName);
 		c.x = xStart;
-		c.y = yStart;
+		c.z = yStart;
 		c.direction = direction;
 	}
 }

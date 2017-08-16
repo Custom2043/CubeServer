@@ -2,8 +2,8 @@ package packet;
 
 import java.io.IOException;
 
+import client.ClientMain;
 import main.Account;
-import main.ClientMain;
 import main.Cube;
 import util.CustomInputStream;
 import util.CustomOutputStream;

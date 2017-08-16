@@ -3,7 +3,7 @@ package packet;
 import java.io.IOException;
 import java.util.Iterator;
 
-import main.ClientMain;
+import client.ClientMain;
 import main.Cube;
 import util.CustomInputStream;
 import util.CustomOutputStream;

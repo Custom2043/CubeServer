@@ -16,14 +16,24 @@ public class Game
 	{
 		for (Cube c : cubes)
 		{
+			float temp=0;
 			if ((c.direction & 0b1000) != 0)
-				c.y += dif * 0.01f;
+				temp += dif * 0.01f;
 			if ((c.direction & 0b100) != 0)
-				c.y -= dif * 0.01f;
+				temp -= dif * 0.01f;
+			c.x += temp * Math.sin(c.angle);
+			c.z -= temp * Math.cos(c.angle);
+			temp=0;
 			if ((c.direction & 0b10) != 0)
-				c.x -= dif * 0.01f;
+				temp -= dif * 0.01f;
 			if ((c.direction & 0b1) != 0)
-				c.x += dif * 0.01f;
+				temp += dif * 0.01f;
+			c.x += temp * Math.cos(c.angle);
+			c.z += temp * Math.sin(c.angle);
+			if (c.x > 9.5) c.x = 9.5;
+			if (c.x < -9.5) c.x = -9.5;
+			if (c.z > 9.5) c.z = 9.5;
+			if (c.z < -9.5) c.z = -9.5;
 		}
 	}
 }

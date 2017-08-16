@@ -1,12 +1,13 @@
 package main;
 
+import server.CubeServer;
 import util.CustomTimer;
 import util.TimeSection;
 
 public abstract class Main 
 {
 	public static final int PORT = 26302;
-	public static final String gameName = "BattleTube";
+	public static final String gameName = "Cube server";
 	public static final int milliEntreTick = 20; // 50 par secondes
 	public static boolean continu = true;
 	protected static CustomTimer timer;

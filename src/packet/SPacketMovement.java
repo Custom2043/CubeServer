@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import main.Account;
 import main.Cube;
-import main.ServerMain;
+import server.ServerMain;
 import util.CustomInputStream;
 import util.CustomOutputStream;
 
@@ -16,7 +16,7 @@ public class SPacketMovement extends Packet implements Packet.PacketToServer
 	public SPacketMovement(Cube c)
 	{
 		xStart = c.x;
-		yStart = c.y;
+		yStart = c.z;
 		direction = c.direction;
 	}
 	@Override
@@ -38,7 +38,7 @@ public class SPacketMovement extends Packet implements Packet.PacketToServer
 	public void handleServer(Account acc) 
 	{
 		acc.cube.x = xStart;
-		acc.cube.y = yStart;
+		acc.cube.z = yStart;
 		acc.cube.direction = direction;
 		ServerMain.server.sendPacketToAllPlayersExcept(new CPacketMovement(acc.cube), acc.cube.name);
 	}

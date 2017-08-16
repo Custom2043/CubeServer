@@ -2,7 +2,7 @@ package packet;
 
 import java.io.IOException;
 
-import main.ClientMain;
+import client.ClientMain;
 import util.CustomInputStream;
 import util.CustomOutputStream;
 

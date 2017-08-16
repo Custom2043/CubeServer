@@ -1,9 +1,8 @@
 package gui;
 
-import main.ClientMain;
-
 import org.newdawn.slick.Color;
 
+import client.ClientMain;
 import util.TimeSection;
 import drawer.CustomDrawer;
 
