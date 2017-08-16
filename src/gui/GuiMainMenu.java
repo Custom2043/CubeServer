@@ -47,7 +47,7 @@ public class GuiMainMenu extends Gui
 			}
 			if (boutonOn != null && boutonOn.id == 2 && boutonOn.isActiv)
 			{
-				ClientMain.setScreen(new GuiJoinServer());
+				ClientMain.setScreen(new GuiJoinServer(boutons.get(0).getTexte().texte));
 			}
 		}
 	}

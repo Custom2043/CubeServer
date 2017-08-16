@@ -7,10 +7,11 @@ import util.ScreenCoor;
 public class GuiJoinServer extends Gui
 {
 	public String name;
-	public GuiJoinServer()
+	public GuiJoinServer(String n)
 	{
 		this.boutons.add(new ZoneTexte("IP", 0, ScreenCoor.screenGui(.25f,.3f,.5f,0,0,-50,0,100), false, "IP"));
 		this.boutons.add(new BasicBouton("Rejoindre le serveur", 1, ScreenCoor.screenGui(.375f,.7f,.25f,0,0,-50,0,100), false));
+		name = n;
 	}
 	@Override
 	public void quit() {
