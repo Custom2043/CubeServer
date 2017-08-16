@@ -27,13 +27,15 @@ public class GuiJoinServer extends Gui
 	protected void mouseEvent(int clicID, int X, int Y, boolean press,
 			CustomBouton boutonOn)
 	{
-		if (boutonOn != null && boutonOn.id == 1 && boutonOn.isActiv)
+		if (clicID == 0 && press)
 		{
-			ClientMain.compte = new Account(name, null);
-			ClientMain.joinDistantServer(boutons.get(0).getTexte().texte);
-			ClientMain.setScreen(new GuiLoading());
+			if (boutonOn != null && boutonOn.id == 1 && boutonOn.isActiv)
+			{
+				ClientMain.compte = new Account(name, null);
+				ClientMain.joinDistantServer(boutons.get(0).getTexte().texte);
+				ClientMain.setScreen(new GuiLoading());
+			}
 		}
-		
 	}
 
 	@Override
