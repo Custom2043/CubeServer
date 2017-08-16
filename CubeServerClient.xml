@@ -3,21 +3,22 @@
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
     <target name="create_run_jar">
-        <jar destfile="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer.jar">
+        <jar destfile="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer.jar">
             <manifest>
                 <attribute name="Main-Class" value="client.ClientMain"/>
-                <attribute name="Class-Path" value=". CubeServer_lib/CustomPackageSources.jar CubeServer_lib/commons-net-3.3.jar CubeServer_lib/lwjgl_util-2.9.1.jar CubeServer_lib/lwjgl-2.9.1.jar CubeServer_lib/slick-util.jar CubeServer_lib/slick.jar CubeServer_lib/commons-io-2.4.jar"/>
+                <attribute name="Class-Path" value=". CubeServer_lib/CustomPackageSources.jar CubeServer_lib/commons-net-3.3.jar CubeServer_lib/lwjgl_util-2.9.1.jar CubeServer_lib/lwjgl-2.9.1.jar CubeServer_lib/slick-util.jar CubeServer_lib/slick.jar CubeServer_lib/commons-io-2.4.jar CubeServer_lib/jorbis-0.0.17.jar"/>
             </manifest>
             <fileset dir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/bin"/>
         </jar>
-        <delete dir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <mkdir dir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CustomPackage/CustomPackageSources.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/commons/commons-net-3.3.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/lwjgl/lwjgl_util-2.9.1.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/lwjgl/lwjgl-2.9.1.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/slick/slick-util.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/slick/slick.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
-        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/commons/commons-io-2.4.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer_lib"/>
+        <delete dir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <mkdir dir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CustomPackage/CustomPackageSources.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/commons/commons-net-3.3.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/lwjgl/lwjgl_util-2.9.1.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/lwjgl/lwjgl-2.9.1.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/slick/slick-util.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/slick/slick.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/commons/commons-io-2.4.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
+        <copy file="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/lib/jorbis-0.0.17.jar" todir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/jar/CubeServer_lib"/>
     </target>
 </project>
