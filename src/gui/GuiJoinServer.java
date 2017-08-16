@@ -26,7 +26,7 @@ public class GuiJoinServer extends Gui
 	protected void mouseEvent(int clicID, int X, int Y, boolean press,
 			CustomBouton boutonOn)
 	{
-		if (boutonOn != null && boutonOn.id == 2 && boutonOn.isActiv)
+		if (boutonOn != null && boutonOn.id == 1 && boutonOn.isActiv)
 		{
 			ClientMain.compte = new Account(name, null);
 			ClientMain.joinDistantServer(boutons.get(0).getTexte().texte);
