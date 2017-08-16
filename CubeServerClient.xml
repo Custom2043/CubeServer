@@ -5,7 +5,7 @@
     <target name="create_run_jar">
         <jar destfile="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/CubeServer.jar">
             <manifest>
-                <attribute name="Main-Class" value="main.ClientMain"/>
+                <attribute name="Main-Class" value="client.ClientMain"/>
                 <attribute name="Class-Path" value=". CubeServer_lib/CustomPackageSources.jar CubeServer_lib/commons-net-3.3.jar CubeServer_lib/lwjgl_util-2.9.1.jar CubeServer_lib/lwjgl-2.9.1.jar CubeServer_lib/slick-util.jar CubeServer_lib/slick.jar CubeServer_lib/commons-io-2.4.jar"/>
             </manifest>
             <fileset dir="C:/Users/utilisateur/Desktop/Hikali/Workspace/CubeServer/bin"/>
