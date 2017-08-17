@@ -9,7 +9,7 @@ public class GuiMainMenu extends Gui
 	public GuiMainMenu()
 	{
 		this.boutons.add(new ZoneTexte("Pseudo", 0, ScreenCoor.screenGui(.25f,.25f,.5f,0,0,-50,0,100), true, "Pseudo"));
-		this.boutons.add(new BasicBouton("Créer un serveur", 1, ScreenCoor.screenGui(.375f,.5f,.25f,0,0,-50,0,100), true));
+		this.boutons.add(new BasicBouton("Creer un serveur", 1, ScreenCoor.screenGui(.375f,.5f,.25f,0,0,-50,0,100), true));
 		this.boutons.add(new BasicBouton("Rejoindre le serveur", 2, ScreenCoor.screenGui(.375f,.75f,.25f,0,0,-50,0,100), true));
 	}
 	@Override
