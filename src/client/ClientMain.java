@@ -23,8 +23,6 @@ import packet.DPacketPlayerConnect;
 import packet.Packet;
 import packet.SPacketQuitGame;
 import server.CubeServer;
-import sounds.CodecOgg;
-import sounds.SoundSystem;
 import util.CustomTimer;
 import util.TimeSection;
 import drawer.CustomDrawer;
@@ -52,10 +50,10 @@ public class ClientMain extends Main
 		CustomDrawer.createDisplay(1280, 720, gameName);
 		screen = new GuiMainMenu();
 		CustomDrawer.load2D();
-		SoundSystem.init();
+		/*SoundSystem.init();
 		SoundSystem.setDefaultCodec(CodecOgg.class);
 		source = SoundSystem.newSource(true, true, "res/song.ogg", true);
-		SoundSystem.play(source);
+		SoundSystem.play(source);*/
 	}
 	public void quit() 
 	{
@@ -64,7 +62,7 @@ public class ClientMain extends Main
 		screen.quit();
 		ShaderProgram.quit();
 		Drawer.text.quit();
-		SoundSystem.quit();
+		//SoundSystem.quit();
 	}
 	public static void startNewGame()
 	{

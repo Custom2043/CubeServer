@@ -28,12 +28,15 @@ public class Game
 				temp -= dif * 0.01f;
 			if ((c.direction & 0b1) != 0)
 				temp += dif * 0.01f;
-			c.x += temp * Math.cos(c.angle);
-			c.z += temp * Math.sin(c.angle);
-			if (c.x > 9.5) c.x = 9.5;
-			if (c.x < -9.5) c.x = -9.5;
-			if (c.z > 9.5) c.z = 9.5;
-			if (c.z < -9.5) c.z = -9.5;
+			double cos = Math.cos(c.angle), sin = Math.sin(c.angle);
+			c.x += temp * cos;
+			c.z += temp * sin;
+			
+			double max = (Math.abs(sin) + Math.abs(cos)) / 2;
+			if (c.x > 10-max) c.x = 10-max;
+			if (c.x < -10+max) c.x = -10+max;
+			if (c.z > 10-max) c.z = 10-max;
+			if (c.z < -10+max) c.z = -10+max;
 		}
 	}
 }

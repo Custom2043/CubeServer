@@ -13,6 +13,7 @@ public class CPacketMovement extends Packet implements PacketToClient
 	public String cubeName;
 	public double xStart, yStart;
 	public byte direction;
+	public boolean toWrite(){return false;}
 	public CPacketMovement(){}
 	public CPacketMovement(Cube c)
 	{

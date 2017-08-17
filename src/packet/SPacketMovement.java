@@ -12,6 +12,7 @@ public class SPacketMovement extends Packet implements Packet.PacketToServer
 {
 	public double xStart, yStart;
 	public byte direction;
+	public boolean toWrite(){return false;}
 	public SPacketMovement(){}
 	public SPacketMovement(Cube c)
 	{

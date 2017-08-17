@@ -38,7 +38,7 @@ public class Matrix
         projectionMatrix.m33 = 0;
         return projectionMatrix;
     }
-	public static Matrix4f createTransformationMatrix(double x, double y, double z)
+	public static Matrix4f createTransformationMatrix(double x, double y, double z, float angle)
 	{
 		Matrix4f viewMatrix = new Matrix4f();
 		Cube cube = ClientMain.compte.cube;
@@ -46,6 +46,7 @@ public class Matrix
 		viewMatrix.rotate(GuiIngame.rotX, new Vector3f(1,0,0));
 		viewMatrix.rotate(ClientMain.compte.cube.angle, new Vector3f(0,1,0));
 		viewMatrix.translate(new Vector3f((float)(x-cube.x),(float)y,(float)(z-cube.z)));
+		viewMatrix.rotate(-angle, new Vector3f(0,1,0));
 		return viewMatrix;
 	}
 }
