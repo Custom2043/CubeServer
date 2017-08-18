@@ -58,25 +58,6 @@ public class ClientMain extends Main
 		SoundSystem.setDefaultCodec(CodecOgg.class);
 		source = SoundSystem.newSource(true, true, "res/song.ogg", true);
 		SoundSystem.play(source);*/
-		Drawer.text.toString();
-		InternalTextureLoader.get().setDeferredLoading(false);
-		
-		CustomTimer timer = new CustomTimer();
-		
-		try {
-			Texture t = InternalTextureLoader.get().getTexture("res/Panorama.png", false, GL11.GL_NEAREST);
-			t.getTextureData();t.getTextureData();t.getTextureData();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println(timer.getDifference());
-		
-		timer.set0();
-		TextureLoader.loadTexture("res/Panorama.png", GL11.GL_NEAREST, false);
-		System.out.println(timer.getDifference());
-		
-		
 	}
 	public void quit() 
 	{
