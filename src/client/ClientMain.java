@@ -17,9 +17,6 @@ import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
-import org.lwjgl.opengl.GL11;
-import org.newdawn.slick.opengl.InternalTextureLoader;
-import org.newdawn.slick.opengl.Texture;
 
 import packet.DPacketPing;
 import packet.DPacketPlayerConnect;
@@ -30,7 +27,6 @@ import util.CustomTimer;
 import util.TimeSection;
 import drawer.CustomDrawer;
 import drawer.ShaderProgram;
-import drawer.TextureLoader;
 
 public class ClientMain extends Main
 {
